@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Both dev and production preview run on [http://localhost:3001](http://localhost:3001). The site lives in `src/app/page.tsx`, with shared styles defined in `src/app/globals.css`.
+The dev server targets port 3001 by default but will automatically move to the next free port if 3001 is occupied. The site lives in `src/app/page.tsx`, with shared styles defined in `src/app/globals.css`.
 
 ### Build
 
