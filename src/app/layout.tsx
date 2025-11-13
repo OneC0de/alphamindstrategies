@@ -15,15 +15,28 @@ const serif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Alpha Mind Strategies | Strategic Advisory for Modern Leaders",
+  title: "Alpha Mind Strategies",
   description:
-    "Alpha Mind Strategies partners with founders, investors, and policy leaders to craft sharp narratives, decisive strategies, and confident execution.",
+    "Alpha Mind Strategies partners with legal, risk, and product teams to operationalize compliance, privacy, and responsible AI.",
   metadataBase: new URL("https://alphamindstrategies.com"),
   openGraph: {
     title: "Alpha Mind Strategies",
     description:
-      "Strategy and communications advisory for leaders navigating high-stakes decisions.",
+      "A modern compliance and AI-governance studio for organizations shipping products in regulated markets.",
+    url: "https://alphamindstrategies.com",
+    siteName: "Alpha Mind Strategies",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alpha Mind Strategies",
+    description:
+      "Compliance, privacy, and responsible AI systems for the algorithmic age.",
+  },
+  icons: {
+    icon: "/alpha-mind-logo.png",
+    shortcut: "/alpha-mind-logo.png",
+    apple: "/alpha-mind-logo.png",
   },
 };
 

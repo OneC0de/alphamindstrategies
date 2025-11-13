@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --color-charcoal: #1a1a1a;
   --color-ivory: #f8f4ee;
-  --color-gold: #c4a46a;
-  --color-ink: #224b8f;
-  --color-fog: #d6d0c4;
-  --color-ink-translucent: rgba(34, 75, 143, 0.08);
+  --color-navy: #1e2737;
+  --color-cobalt: #2a4fa3;
+  --color-slate: #4b4f5b;
+  --color-slate-soft: #6b707c;
+  --color-pewter: #c9c3b6;
+  --color-shell: #f1ece2;
+  --shadow-soft: 0 30px 60px -40px rgba(20, 24, 31, 0.35);
+  --radius-xl: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--color-ivory);
-  color: var(--color-charcoal);
-  font-family: var(--font-sans), "Space Grotesk", Inter, system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--color-navy);
+  font-family: var(--font-sans), "Space Grotesk", "Inter", system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
 }
 
 .text-serif {
-  font-family: var(--font-serif), "Source Serif 4", "Ibarra Real Nova",
-    Georgia, serif;
+  font-family: var(--font-serif), "Source Serif 4", Georgia, serif;
   letter-spacing: -0.01em;
 }
 
@@ -31,11 +40,18 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-ink);
+  outline: 2px solid var(--color-cobalt);
   outline-offset: 3px;
 }
 
 ::selection {
-  background: var(--color-ink);
+  background: var(--color-cobalt);
   color: var(--color-ivory);
+}
+
+.surface-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid color-mix(in srgb, var(--color-pewter) 65%, transparent);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
 }
