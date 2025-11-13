@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --color-charcoal: #1a1a1a;
+  --color-ivory: #f8f4ee;
+  --color-gold: #c4a46a;
+  --color-ink: #224b8f;
+  --color-fog: #d6d0c4;
+  --color-ink-translucent: rgba(34, 75, 143, 0.08);
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans), "Space Grotesk", Inter, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.text-serif {
+  font-family: var(--font-serif), "Source Serif 4", "Ibarra Real Nova",
+    Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-ivory);
+}
